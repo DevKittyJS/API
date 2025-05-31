@@ -1,5 +1,9 @@
+:root {
+  --bg-color: #fff;
+}
+
 .scr-spinner {
-  color: #fff;
+  color: var(--bg-color);
   font-size: 10px;
   width: 1em;
   height: 1em;
