@@ -1,7 +1,3 @@
-:root {
-  --bg-color: #fff;
-}
-
 .scr-spinner {
   color: var(--bg-color);
   font-size: 10px;
