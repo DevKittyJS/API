@@ -1,3 +1,7 @@
+:root {
+  --bg-color: #fff;
+}
+
 .scr-spinner2, .scr-spinner2:before, .scr-spinner2:after {
   border-radius: 50%;
   width: 2.5em;
@@ -6,7 +10,7 @@
   animation: bblFadInOut 1.8s infinite ease-in-out;
 }
 .scr-spinner2 {
-  color: #FFF;
+  color: var(--bg-color);
   font-size: 7px;
   position: relative;
   text-indent: -9999em;
