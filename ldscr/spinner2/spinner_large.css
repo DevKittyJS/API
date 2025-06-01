@@ -1,11 +1,11 @@
-.scr-minimal, .scr-minimal:before, .scr-minimal:after {
+.scr-spinner2, .scr-spinner2:before, .scr-spinner2:after {
   border-radius: 50%;
   width: 2.5em;
   height: 2.5em;
   animation-fill-mode: both;
   animation: bblFadInOut 1.8s infinite ease-in-out;
 }
-.scr-minimal {
+.scr-spinner2 {
   color: var(--bg-color);
   font-size: 7px;
   position: relative;
@@ -13,17 +13,17 @@
   transform: translateZ(0);
   animation-delay: -0.16s;
 }
-.scr-minimal:before,
-.scr-minimal:after {
+.scr-spinner2:before,
+.scr-spinner2:after {
   content: '';
   position: absolute;
   top: 0;
 }
-.scr-minimal:before {
+.scr-spinner2:before {
   left: -3.5em;
   animation-delay: -0.32s;
 }
-.scr-minimal:after {
+.scr-spinner2:after {
   left: 3.5em;
 }
 
