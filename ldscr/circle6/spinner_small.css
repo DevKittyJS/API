@@ -2,7 +2,7 @@
   position: relative;
   border: 24px solid #0000;
   border-radius:50%;
-  animation: piefill 2s linear infinite;
+  animation: piefill 1s linear infinite;
 }
 
 @keyframes piefill {
