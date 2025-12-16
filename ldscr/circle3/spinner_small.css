@@ -1,32 +1,53 @@
 .dk-ldscr {
   width: 48px;
   height: 48px;
+  border-radius: 50%;
   position: relative;
+  border: 3px solid;
+  border-color: var(--bg-color, #fff) var(--bg-color, #fff) transparent transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
 }
 .dk-ldscr::after,
 .dk-ldscr::before {
   content: '';  
   box-sizing: border-box;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  border: 2px solid var(--bg-color, #fff);
   position: absolute;
   left: 0;
+  right: 0;
   top: 0;
-  animation: animloader 2s linear infinite;
+  bottom: 0;
+  margin: auto;
+  border: 3px solid;
+  border-color: transparent transparent var(--bg-color, #fff) var(--bg-color, #fff);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotationBack 0.5s linear infinite;
+  transform-origin: center center;
 }
-.dk-ldscr::after {
-  animation-delay: 1s;
+.dk-ldscr::before {
+  width: 32px;
+  height: 32px;
+  border-color: var(--bg-color, #fff) var(--bg-color, #fff) transparent transparent;
+  animation: rotation 1.5s linear infinite;
 }
-
-@keyframes animloader {
+    
+@keyframes rotation {
   0% {
-    transform: scale(0);
-    opacity: 1;
+    transform: rotate(0deg);
   }
   100% {
-    transform: scale(1);
-    opacity: 0;
+    transform: rotate(360deg);
+  }
+} 
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
   }
 }
+    
