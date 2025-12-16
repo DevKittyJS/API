@@ -1,3 +1,5 @@
+console.log("YOU ARE COMMUNICATION WITH DEVKITYY :)")
+
 function loadScreens() {
   const screens = document.querySelectorAll(".dk-ldscr");
 
@@ -264,3 +266,4 @@ document.addEventListener("DOMContentLoaded", () => {
   loadScreens();
   loadIcons();
 });
+
