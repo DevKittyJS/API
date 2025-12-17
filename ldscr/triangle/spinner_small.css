@@ -1,0 +1,26 @@
+.dk-ldscr {
+          position: relative;
+          width: 48px;
+          height: 48px;
+        }
+        .dk-ldscr:before,
+        .dk-ldscr:after {
+          content:"";
+          display: block;
+          border: 32px solid transparent;
+          border-top-color: var(--bg-color, #fff);
+          position: absolute;
+          left: 0;
+          top: 0;
+          animation: weld-rotate 2s infinite ease-in;
+        }
+        .dk-ldscr:before {
+          border-color: transparent  transparent transparent var(--bg-color, #fff);
+          animation-delay: 0.5s;
+        }
+        @keyframes weld-rotate {
+          0% , 25% {transform: rotate(0deg)}
+          50% , 75% {transform: rotate(180deg)}
+          100% {transform: rotate(360deg)}
+        }
+      
