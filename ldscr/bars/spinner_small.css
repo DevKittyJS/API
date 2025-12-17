@@ -8,7 +8,7 @@
   background: currentColor;
   color: var(--bg-color, #fff);
   box-sizing: border-box;
-  animation: animloader 0.3s 0.3s linear infinite alternate;
+  animation: animloader_bars 0.3s 0.3s linear infinite alternate;
 }
 
 .dk-ldscr::after, .dk-ldscr::before {
@@ -29,7 +29,7 @@
   animation-delay: 0s;
 }
 
-@keyframes animloader {
+@keyframes animloader_bars {
   0%   { height: 48px} 
   100% { height: 4px}
 }
