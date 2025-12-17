@@ -4,7 +4,7 @@
     position: relative;
     overflow: hidden;
   }
-  .dk-ldscr:before {
+  .dk-ldscr::before {
     content: "";
     width: 70px;
     height: 70px;
